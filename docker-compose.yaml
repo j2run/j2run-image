@@ -1,0 +1,7 @@
+services:
+  test-remote:
+    build: .
+    ports:
+      - "5900:5900"
+    mem_limit: 200mb
+    cpus: 1
