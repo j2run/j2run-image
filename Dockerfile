@@ -21,4 +21,6 @@ ENV DISPLAY :0
 ENV RESOLUTION=1x1
 ENV LD_PRELOAD=/micro/libvncserver.so
 
+EXPOSE 5900
+
 ENTRYPOINT ["/bin/bash", "-c", "/entry.sh"]
