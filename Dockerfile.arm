@@ -7,7 +7,7 @@ RUN apk add --no-cache xvfb fluxbox supervisor bash wqy-zenhei openjdk11
 ADD supervisord.conf /etc/supervisord.conf
 ADD config/microemulator/config2.xml /root/.microemulator/config2.xml
 ADD entry.sh /entry.sh
-ADD micro micro-arm/
+ADD micro-arm micro/
 
 COPY jar/game.jar /data/game.jar
 COPY jar/password /data/password 
